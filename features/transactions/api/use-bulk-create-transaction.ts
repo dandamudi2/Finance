@@ -24,7 +24,7 @@ export const useBulkCreateTransactions =(id?:string)=>{
             return await response.json();
         },
         onSuccess :()=>{
-            toast.success("Transaction deleted");
+            toast.success("Bulk transactions created");
             queryClient.invalidateQueries({queryKey:["transaction",{id}]})
             queryClient.invalidateQueries({queryKey:["transactions"]})
         },

@@ -24,7 +24,6 @@ export const useGetTransaction = (id?: string) => {
               };
 
             return data;
-
         }
     });
 
